@@ -8,15 +8,25 @@ var CardList = React.createClass({
         var createCard = function (card) {
             return (
                 <div className={"col-sm-12 col-md-6 col-lg-4 text-center card-wrapper " + card.cardClass}>
-                    <div className="row">
-                        <header className="col-sm-12">
-                            <h1>{card.cardName}</h1>
-                        </header>
-                    </div>
+                        
+                    <header className="row">
+                    	<div className="col-sm-2">
+                    		<span className={"card-icon glyphicon glyphicon-" + card.cardIcon}></span>
+                    	</div>
+                        
+                        <div className="col-sm-8">
+                        	<h1>{card.cardName}</h1>
+                        </div>
+                        
+                        <div className="col-sm-2">
+                        	<span className="glyphicon glyphicon-heart card-heart card-icon"></span>
+                        	<span className="card-heart-number">{card.heartNumber}</span>
+                        </div>
+                    </header>
 
                     <div className="row">
-                        <div className="col-sm-12">
-                            <p>{card.cardDescription}</p>
+                        <div className="col-sm-12 card-description-wrapper">
+                            <p className="card-description">{card.cardDescription}</p>
                         </div>
                     </div>
 

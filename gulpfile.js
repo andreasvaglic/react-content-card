@@ -16,6 +16,7 @@ var config = {
         html: "./src/*.html",
         js: "./src/**/*.js",
         images: "./src/images/*",
+        fonts: "node_modules/bootstrap-css-only/fonts/*",
         css: [
         "node_modules/bootstrap-css-only/css/bootstrap.min.css",
         "node_modules/bootstrap-css-only/css/bootstrap-theme.min.css",
@@ -71,6 +72,12 @@ gulp.task("images", function () {
         .pipe(connect.reload());
 });
 
+gulp.task("fonts", function () {
+    gulp.src(config.paths.fonts)
+        .pipe(gulp.dest(config.paths.dist + "/fonts"))
+        .pipe(connect.reload());
+});
+
 gulp.task("lint", function () {
     return gulp.src(config.paths.js)
         .pipe(lint({
@@ -84,7 +91,4 @@ gulp.task("watch", function () {
     gulp.watch(config.paths.js, ["js", "lint"]);
 });
 
-// In command line, if we just type "gulp" these are the tasks he will run
-// gulp.task("default", ["html", "js", "css", "lint", "open", "watch"]);
-
-gulp.task("default", ["html", "js", "css", "images", "open", "watch"]);
+gulp.task("default", ["html", "js", "css", "images", "fonts", "open", "watch"]);

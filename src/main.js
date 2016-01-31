@@ -10,6 +10,13 @@ var ContentCard = React.createClass({
 				{cardName: "Risnjak", cardClass: "risnjak", cardDescription: "Risnjak bla bla bla bla"},
 				{cardName: "Sjeverni Velebit", cardClass: "velebit", cardDescription: "Sjeverni Velebit bla bla bla bla"},
 				{cardName: "Plitvicka Jezera", cardClass: "jezera", cardDescription: "Plitvicka Jezera bla bla bla bla"}
+
+			],
+			cardOptions: [
+				{optionName: "Delete"},
+				{optionName: "Open"},
+				{optionName: "Print"},
+				{optionName: "Share"}
 			]
 		};
 	},
@@ -17,7 +24,7 @@ var ContentCard = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<CardList cards={this.state.cards} />
+				<CardList cards={this.state.cards} cardOptions={this.state.cardOptions} />
 			</div>
 		);
 	}

@@ -1,0 +1,23 @@
+.card-wrapper {
+	font-family: 'Raleway', sans-serif;
+	background-size: cover;
+	height: 400px;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+}
+
+header {
+	background-color: rgba(195, 195, 195, 0.6);
+}
+
+.risnjak {
+	background-image: url("../images/risnjak.jpg");
+}
+
+.jezera {
+	background-image: url("../images/pjezera.jpg");	
+}
+
+.velebit {
+	background-image: url("../images/svelebit.jpg");	
+}

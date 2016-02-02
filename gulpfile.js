@@ -21,7 +21,7 @@ var config = {
         css: [
         "node_modules/bootstrap-css-only/css/bootstrap.min.css",
         "node_modules/bootstrap-css-only/css/bootstrap-theme.min.css",
-        "src/css/*.css"
+        "src/css/**/*.css"
         ],
         scss: "src/scss/*.scss",
         dist: "./dist",
@@ -91,6 +91,8 @@ gulp.task("sass", function () {
 gulp.task("watch", function () {
     gulp.watch(config.paths.html, ["html"]);
     gulp.watch(config.paths.js, ["js", "lint"]);
+    gulp.watch(config.paths.scss, ["sass"]);
+    gulp.watch(config.paths.css, ["css"]);
 });
 
 gulp.task("default", ["html", "js", "sass", "css", "images", "open", "watch"]);

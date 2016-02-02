@@ -1,0 +1,5 @@
+@mixin user-select($value) {
+	-webkit-user-select: $value; /* Chrome/Safari */        
+	-moz-user-select: $value; /* Firefox */
+	-ms-user-select: $value; /* IE10+ */
+}

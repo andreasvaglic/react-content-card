@@ -1,0 +1,88 @@
+@import "basics";
+@import "mixins";
+
+body {
+    font-size: 18px;
+}
+
+header {
+    background-color: $textBackgroundColor;
+}
+
+.card-icon, h1 {
+    font-size: 170%;
+}
+
+.card-icon {
+    line-height: 200%;
+}
+
+.card-heart {
+    color: $cardColor1;
+}
+
+.card-heart:hover, .card-heart:active {
+    color: $cardColor2;
+    cursor: pointer;
+}
+
+.card-heart-number {
+    @include user-select(none);
+}
+
+.card-wrapper {
+    background-size: cover;
+    border-left: 1px solid white;
+    border-top: 2px solid white;
+    font-family: $cardFont;
+    height: 400px;
+}
+
+.card-description {
+    background: $textBackgroundColor;
+    font-size: 100%;
+    padding: 1%;
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.5);
+}
+
+.card-description-wrapper {
+    padding: 10%;
+    padding-top: 3%;
+}
+
+.card-overlay {
+    background-color: $cardColor1;
+    bottom: 0;
+    color: $cardColor3;
+    display: none;
+    height: 13%;
+    position: absolute;
+    width: 100%;
+}
+
+.card-wrapper:hover .card-overlay {
+    display: block;
+}
+
+.overlay-option {
+    cursor: pointer;
+    font-size: 110%;
+    height: 100%;
+    line-height: 250%;
+}
+
+.overlay-option:hover {
+    text-decoration: underline;
+}
+
+.risnjak {
+    background-image: url("../images/risnjak.jpg");
+}
+
+.jezera {
+    background-image: url("../images/pjezera.jpg"); 
+}
+
+.velebit {
+    background-image: url("../images/svelebit.jpg");    
+}

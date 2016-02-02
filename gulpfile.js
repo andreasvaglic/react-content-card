@@ -72,12 +72,6 @@ gulp.task("images", function () {
         .pipe(connect.reload());
 });
 
-gulp.task("fonts", function () {
-    gulp.src(config.paths.fonts)
-        .pipe(gulp.dest(config.paths.dist + "/fonts"))
-        .pipe(connect.reload());
-});
-
 gulp.task("lint", function () {
     return gulp.src(config.paths.js)
         .pipe(lint({
@@ -91,4 +85,4 @@ gulp.task("watch", function () {
     gulp.watch(config.paths.js, ["js", "lint"]);
 });
 
-gulp.task("default", ["html", "js", "css", "images", "fonts", "open", "watch"]);
+gulp.task("default", ["html", "js", "css", "images", "open", "watch"]);

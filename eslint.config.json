@@ -4,8 +4,7 @@
   },
   "env": {
     "browser": true,
-    "node": true,
-    "commonjs": true
+    "node": true
   },
   "rules": {
     "quotes": [2, "double"],

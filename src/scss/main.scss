@@ -10,7 +10,7 @@ header {
 }
 
 .card-icon, h1 {
-    font-size: 170%;
+    font-size: 135%;
 }
 
 .card-icon {
@@ -42,6 +42,7 @@ header {
     background: $textBackgroundColor;
     font-size: 100%;
     padding: 1%;
+    color: $cardColor4;
     text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.5);
 }
 
@@ -73,16 +74,4 @@ header {
 
 .overlay-option:hover {
     text-decoration: underline;
-}
-
-.risnjak {
-    background-image: url("../images/risnjak.jpg");
-}
-
-.jezera {
-    background-image: url("../images/pjezera.jpg"); 
-}
-
-.velebit {
-    background-image: url("../images/svelebit.jpg");    
 }

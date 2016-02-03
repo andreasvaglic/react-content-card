@@ -29,11 +29,11 @@ var CardStore = assign({}, EventEmitter.prototype, {
 Dispatcher.register(function (action) {
     switch (action.actionType) {
         case ActionTypes.VOTE_UP:
-                card = action.card;
+                card.cardIndex = action.data.cardIndex;
+                card.heartNumber = action.data.heartNumber;
                 CardStore.emitChange();
                 break;
         default:
-        // no op
     }
 });
 

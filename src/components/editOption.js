@@ -5,7 +5,7 @@ var React = require("react");
 var EditOption = React.createClass({
 	render: function () {
 		return (
-			<div className={"overlay-option col-sm-" + this.props.numberOfOptions}>
+			<div className={"overlay-option col-xs-" + this.props.numberOfOptions}>
 				{this.props.optionName}
 			</div>
 		);

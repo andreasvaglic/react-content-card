@@ -88,6 +88,12 @@ gulp.task("sass", function () {
         .pipe(gulp.dest("src/css"));
 });
 
+gulp.task("fonts", function () {
+    gulp.src(config.paths.fonts)
+        .pipe(gulp.dest(config.paths.dist + "/fonts"))
+        .pipe(connect.reload());
+});
+
 gulp.task("watch", function () {
     gulp.watch(config.paths.html, ["html"]);
     gulp.watch(config.paths.js, ["js", "lint"]);
@@ -95,4 +101,4 @@ gulp.task("watch", function () {
     gulp.watch(config.paths.css, ["css"]);
 });
 
-gulp.task("default", ["html", "js", "sass", "css", "images", "open", "watch"]);
+gulp.task("default", ["html", "js", "sass", "css", "fonts", "images", "open", "watch"]);

@@ -14,21 +14,24 @@ gulp
 ## Using jQuery plugin
 
 ```javascript
-$(selector).contentCard(configuration);
+$(selector).contentCard(); // Use sample cards
+$(selector).contentCard(configuration); // Use your own cards
 ```
 
 ### Configuration
 
 ```javascript
-cards: [{
-  cardName: "",
-  cardBackground: "",
-  cardDescription: "",
-  cardIcon: ""
-}],
-cardOptions: [
-  optionName: "",
-  optionName: ""
-]
+{
+  cards: [{
+    cardName: "",
+    cardBackground: "",
+    cardDescription: "",
+    cardIcon: ""
+  }],
+  cardOptions: [
+    optionName: "",
+    optionName: ""
+  ]
+}
 ```
 You can add as many cards as you want. Same for options, although they are meant to fit in one row.

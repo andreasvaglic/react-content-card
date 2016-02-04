@@ -67,38 +67,6 @@ if (typeof jQuery !== "undefined") {
                     cardBackground: "../images/pjezera.jpg",
                     cardDescription: "In 1979, it was added to the UNESCO World Heritage register.",
                     cardIcon: "tree-conifer"
-                },
-                {
-                    cardName: "Risnjak",
-                    cardBackground: "../images/risnjak.jpg",
-                    cardDescription: "Located in Gorski kotar, the most mountainous and heavily forested region of the country.",
-                    cardIcon: "leaf"
-                }, {
-                    cardName: "Sjeverni Velebit",
-                    cardBackground: "../images/svelebit.jpg",
-                    cardDescription: "Covers 109 km2 of the northern section of the Velebit mountain, the largest mountain in Croatia.",
-                    cardIcon: "tree-deciduous"
-                }, {
-                    cardName: "Plitvicka Jezera",
-                    cardBackground: "../images/pjezera.jpg",
-                    cardDescription: "In 1979, it was added to the UNESCO World Heritage register.",
-                    cardIcon: "tree-conifer"
-                },
-                {
-                    cardName: "Risnjak",
-                    cardBackground: "../images/risnjak.jpg",
-                    cardDescription: "Located in Gorski kotar, the most mountainous and heavily forested region of the country.",
-                    cardIcon: "leaf"
-                }, {
-                    cardName: "Sjeverni Velebit",
-                    cardBackground: "../images/svelebit.jpg",
-                    cardDescription: "Covers 109 km2 of the northern section of the Velebit mountain, the largest mountain in Croatia.",
-                    cardIcon: "tree-deciduous"
-                }, {
-                    cardName: "Plitvicka Jezera",
-                    cardBackground: "../images/pjezera.jpg",
-                    cardDescription: "In 1979, it was added to the UNESCO World Heritage register.",
-                    cardIcon: "tree-conifer"
                 }],
                 cardOptions: [{
                     optionName: "Delete"
@@ -139,19 +107,3 @@ if (typeof jQuery !== "undefined") {
 
     })(jQuery);
 }
-
-/*  USAGE
-
-    $(selector).contentCard({
-        cards: [{
-            cardName: "",
-            cardBackground: "",
-            cardDescription: "",
-            cardIcon: ""
-        }],
-        cardOptions: [
-            optionName: "",
-            optionName: ""
-        ]
-    });
-*/
